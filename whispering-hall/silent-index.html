@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Silent Index</title>
+<link rel="stylesheet" href="style.css">
+
+<script data-goatcounter="https://thesanctuary.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+  
+</head>
+<body>
+
+<script>
+
+if(
+localStorage.getItem(
+"sanctuary_verified"
+) !== "true"
+){
+
+window.location.href =
+"/whispering-hall/the-chambers-await/";
+
+}
+
+</script>
+  
+<div class="scene">
+<img class="bg" src="silent-index.jpg">
+<div class="overlay"></div>
+<img class="symbol" src="Silent Index Markings(1).jpeg">
+<div class="hotspot" id="hs"></div>
+<div class="whisper">Some knowledge waits in silence.</div>
+<div class="fade" id="fade"></div>
+</div>
+
+<audio autoplay loop>
+<source src="silent_index_refined.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const fade=document.getElementById('fade');
+
+document.getElementById('hs').onclick=()=>{
+fade.style.opacity='1';
+setTimeout(()=>window.location='chamber-of-names.html',3000);
+};
+
+
+window.addEventListener('beforeunload', ()=>{
+sessionStorage.setItem('activeChamber', current);
+});
+
+document.addEventListener('visibilitychange', ()=>{
+sessionStorage.setItem('activeChamber', current);
+});
+
+
+// Sanctuary chamber persistence
+sessionStorage.setItem('lastChamberPage', 'silent-index.html');
+
+window.addEventListener('pageshow', () => {
+const saved = sessionStorage.getItem('lastChamberPage');
+if(saved && saved !== window.location.pathname.split('/').pop()) {
+window.location.replace(saved);
+}
+});
+
+document.addEventListener('visibilitychange', () => {
+sessionStorage.setItem('lastChamberPage', 'silent-index.html');
+});
+
+
+// Route-based chamber persistence
+sessionStorage.setItem('lastChamberPage', 'silent-index.html');
+
+window.addEventListener('pageshow', () => {
+const expected = sessionStorage.getItem('lastChamberPage');
+
+if(expected &&
+window.location.pathname.split('/').pop() !== expected) {
+window.location.href = expected;
+}
+});
+
+window.addEventListener('beforeunload', () => {
+sessionStorage.setItem('lastChamberPage', 'silent-index.html');
+});
+
+
+// subtle resonance pacing polish
+document.querySelectorAll('.resonance').forEach(r=>{
+
+setInterval(()=>{
+
+r.style.transition='opacity 4.8s ease';
+r.style.opacity='.62';
+
+setTimeout(()=>{
+r.style.opacity='.34';
+},3200);
+
+},9200);
+
+});
+
+
+// synchronized whisper emergence
+window.addEventListener('load',()=>{
+
+setTimeout(()=>{
+
+document.querySelectorAll('.whisper').forEach(w=>{
+w.style.opacity='';
+w.style.animationPlayState='running';
+});
+
+},900);
+
+});
+
+</script>
+</body>
+</html>

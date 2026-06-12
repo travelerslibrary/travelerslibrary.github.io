@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sanctuary</title>
+<style>
+body{
+margin:0;
+background:#040404;
+color:#ead7b0;
+font-family:Georgia,serif;
+padding:3rem;
+}
+.hero{
+text-align:center;
+margin-bottom:3rem;
+}
+.hero h1{
+font-size:3rem;
+font-weight:normal;
+letter-spacing:.14em;
+}
+.hero p{
+opacity:.72;
+max-width:760px;
+margin:auto;
+line-height:1.8;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:1.5rem;
+}
+.card{
+background:#0a0a0a;
+border:1px solid rgba(234,215,176,.12);
+overflow:hidden;
+transition:.45s ease;
+}
+.card:hover{
+transform:translateY(-8px);
+border-color:rgba(234,215,176,.22);
+}
+.card img{
+width:100%;
+height:260px;
+object-fit:cover;
+display:block;
+}
+.info{
+padding:1.2rem;
+}
+.info h3{
+margin-top:0;
+font-weight:normal;
+}
+.info a{
+display:inline-block;
+margin-top:1rem;
+padding:.7rem 1rem;
+border:1px solid rgba(234,215,176,.2);
+text-decoration:none;
+color:#ead7b0;
+font-size:.72rem;
+letter-spacing:.12em;
+}
+
+
+
+
+
+25%{
+opacity:.04;
+filter:blur(12px);
+}
+
+55%{
+opacity:.22;
+filter:blur(7px);
+}
+
+78%{
+opacity:.64;
+filter:blur(2px);
+}
+
+100%{
+opacity:.84;
+filter:blur(0px);
+transform:translateX(-50%) translateY(0px);
+}
+
+}
+
+@media(orientation:landscape) and (max-width:950px){
+
+
+
+}
+
+
+/* Unified Sanctuary Whisper Engine */
+
+
+
+30%{
+opacity:.05;
+filter:blur(10px);
+}
+58%{
+opacity:.28;
+filter:blur(5px);
+}
+82%{
+opacity:.68;
+filter:blur(1px);
+}
+100%{
+opacity:.82;
+filter:blur(0px);
+transform:translateX(-50%) translateY(0px);
+}
+}
+
+@media(orientation:landscape) and (max-width:950px){
+
+}
+
+
+.whisper{
+position:absolute;
+bottom:12%;
+left:50%;
+transform:translateX(-50%);
+max-width:74%;
+text-align:center;
+color:#94704f !important;
+font-style:italic;
+font-size:.9rem;
+letter-spacing:.07em;
+line-height:1.9;
+opacity:0;
+filter:blur(12px);
+text-shadow:
+0 0 4px rgba(255,160,90,.03),
+0 0 10px rgba(255,130,70,.015);
+animation:memoryReveal 8.6s cubic-bezier(.19,1,.22,1) forwards !important;
+}
+
+@keyframes memoryReveal{
+0%{
+opacity:0;
+filter:blur(15px);
+transform:translateX(-50%) translateY(18px);
+}
+32%{
+opacity:.04;
+filter:blur(11px);
+}
+62%{
+opacity:.22;
+filter:blur(5px);
+}
+84%{
+opacity:.58;
+filter:blur(1px);
+}
+100%{
+opacity:.78;
+filter:blur(0px);
+transform:translateX(-50%) translateY(0px);
+}
+}
+
+@media(orientation:landscape) and (max-width:950px){
+.whisper{
+bottom:6%;
+max-width:54%;
+font-size:.8rem;
+}
+}
+
+
+html,body{
+min-height:100svh;
+min-height:100dvh;
+overflow-x:hidden;
+}
+
+.scene,
+.chamber,
+.hero,
+.background{
+min-height:100svh !important;
+min-height:100dvh !important;
+height:100svh !important;
+height:100dvh !important;
+}
+
+/* Chrome mobile cinematic framing */
+@media(max-width:600px){
+
+.whisper{
+bottom:9.5% !important;
+max-width:78% !important;
+font-size:.88rem !important;
+line-height:1.7 !important;
+padding:0 6vw;
+text-align:center !important;
+}
+
+.sigils,
+.symbol,
+.overlay-symbol,
+.center-sigil{
+transform:scale(.88) !important;
+opacity:.32 !important;
+}
+
+}
+
+/* Narrow mobile safeguard */
+@media(max-width:420px){
+
+.whisper{
+bottom:10.5% !important;
+max-width:82% !important;
+font-size:.82rem !important;
+}
+
+.sigils,
+.symbol,
+.overlay-symbol,
+.center-sigil{
+transform:scale(.82) !important;
+}
+
+}
+
+</style>
+
+<script data-goatcounter="https://thesanctuary.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+  
+</head>
+<body>
+
+<script>
+
+if(
+localStorage.getItem(
+"sanctuary_verified"
+) !== "true"
+){
+
+window.location.href =
+"/whispering-hall/the-chambers-await/";
+
+}
+
+</script>
+  
+<div class="hero">
+<h1>SANCTUARY OF THE REMEMBERING FLAME</h1>
+<p>
+A hidden descent through forgotten chambers, living sigils, sacred remembrance, and halls that awaken only for those who linger.
+</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<img src="whispering-hall.jpg">
+<div class="info">
+<h3>The Whispering Hall</h3>
+<a href="index.html">ENTER</a>
+</div>
+</div>
+
+<div class="card">
+<img src="veiled-archive.jpg">
+<div class="info">
+<h3>The Veiled Archive</h3>
+<a href="veiled-archive.html">ENTER</a>
+</div>
+</div>
+
+<div class="card">
+<img src="silent-index.jpg">
+<div class="info">
+<h3>The Silent Index</h3>
+<a href="silent-index.html">ENTER</a>
+</div>
+</div>
+
+<div class="card">
+<img src="chamber-of-names.jpg">
+<div class="info">
+<h3>The Chamber of Names</h3>
+<a href="chamber-of-names.html">ENTER</a>
+</div>
+</div>
+
+<div class="card">
+<img src="hall-without-echoes.jpg">
+<div class="info">
+<h3>Hall Without Echoes</h3>
+<a href="hall-without-echoes.html">ENTER</a>
+</div>
+</div>
+
+</div>
+
+</body>
+</html>
