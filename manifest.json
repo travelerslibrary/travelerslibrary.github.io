@@ -1,6 +1,6 @@
 {
   "name": "Traveler's Library",
-  "short_name": "Library",
+  "short_name": "Traveler's Library",
   "description": "A curated collection of journeys and resources for travelers who wish to continue exploring.",
   "start_url": "/",
   "scope": "/",
