@@ -12,6 +12,39 @@
 name="viewport"
 content="width=device-width, initial-scale=1.0">
 
+<link rel="manifest" href="manifest.json">
+
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<link rel="icon" type="image/png" href="assets/favicon.png">
+
+<meta name="theme-color" content="#121212">
+
+<meta property="og:title" content="Traveler's Library">
+
+<meta property="og:description"
+content="A curated collection of journeys and resources for travelers who wish to continue exploring.">
+
+<meta property="og:image"
+content="https://travelerslibrary.github.io/assets/og-card.PNG">
+
+<meta property="og:type" content="website">
+
+<meta property="og:url"
+content="https://travelerslibrary.github.io/">
+
+<meta name="twitter:card"
+content="summary_large_image">
+
+<meta name="twitter:title"
+content="Traveler's Library">
+
+<meta name="twitter:description"
+content="A curated collection of journeys and resources for travelers who wish to continue exploring.">
+
+<meta name="twitter:image"
+content="https://travelerslibrary.github.io/assets/og-card.PNG">
+  
 <title>The Threshold Opens</title>
 
 <style>
@@ -1070,6 +1103,14 @@ startAudio,
 
 </script>
 
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/service-worker.js");
+  });
+}
+</script>
+  
 </body>
 
 </html>
