@@ -720,6 +720,24 @@ min-height:24px;
 margin-bottom:18px;
 }
 
+#startupSplash{
+  position:fixed;
+  inset:0;
+  background:#121212;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:99999;
+  opacity:1;
+  transition:opacity 1s ease;
+}
+
+#startupSplash img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+  
 </style>
 
 <script data-goatcounter="https://thesanctuary.goatcounter.com/count"
@@ -728,6 +746,12 @@ margin-bottom:18px;
 </head>
 
 <body>
+
+<div id="startupSplash">
+  <img
+    src="assets/travelers-library-splash.PNG"
+    alt="Traveler's Library">
+</div>
 
 <div id="sanctuaryModal" class="modal">
 
@@ -1109,6 +1133,27 @@ if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("/service-worker.js");
   });
 }
+</script>
+
+<script>
+window.addEventListener("load", () => {
+
+  setTimeout(() => {
+
+    const splash =
+      document.getElementById(
+        "startupSplash"
+      );
+
+    splash.style.opacity = "0";
+
+    setTimeout(() => {
+      splash.remove();
+    }, 1000);
+
+  }, 1500);
+
+});
 </script>
   
 </body>
