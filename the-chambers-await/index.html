@@ -1,0 +1,1080 @@
+<!-- THRESHOLD OPENS V1.4 -->
+<!-- PART 1 OF 4 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>The Threshold Opens</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html,
+body{
+
+min-height:100%;
+
+overflow-x:hidden;
+overflow-y:auto;
+
+background:#000;
+
+color:#f5e6d3;
+
+font-family:
+Georgia,
+serif;
+
+animation: pageArrival 1.8s ease-out;
+
+}
+
+.hero{
+
+position:relative;
+
+width:100%;
+
+height:100vh;
+
+background:
+
+url('threshold-opens.PNG')
+
+center center
+
+/
+
+cover
+
+no-repeat;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+}
+
+.overlay{
+
+position:absolute;
+
+inset:0;
+
+background:
+
+linear-gradient(
+
+to bottom,
+
+rgba(0,0,0,.52),
+
+rgba(0,0,0,.64),
+
+rgba(0,0,0,.84)
+
+);
+
+z-index:0;
+
+}
+
+/* ===== MOON-GOLD DOORWAY GLOW ===== */
+
+.door-glow{
+
+position:absolute;
+
+left:50%;
+top:52%;
+
+width:30vw;
+height:52vw;
+
+max-width:220px;
+max-height:340px;
+
+transform: translateX(-50%) scale(1, 1.4);
+
+background: radial-gradient(
+  ellipse at center,
+rgba(255,240,190,0.90) 0%,
+rgba(255,210,140,0.60) 35%,
+rgba(255,180,100,0.25) 65%,
+transparent 100%
+);
+
+mix-blend-mode:screen;
+
+animation:
+
+doorPulse
+
+12s
+
+ease-in-out
+
+infinite;
+
+pointer-events:none;
+
+z-index:2;
+
+}
+
+@keyframes pageArrival{
+
+from{
+opacity:0;
+transform:translateY(10px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+@keyframes doorPulse{
+
+0%{
+
+opacity:.55;
+
+transform:
+
+translate(-50%,-50%)
+
+scale(.92, 1.3);
+
+}
+
+50%{
+
+opacity:.90;
+
+transform:
+
+translate(-50%,-50%)
+
+scale(1.02,1.4);
+
+}
+
+100%{
+
+opacity:.55;
+
+transform:
+
+translate(-50%,-50%)
+
+scale(.92,1.3);
+
+}
+
+}
+
+.content{
+
+position:relative;
+
+z-index:3;
+
+line-height: 1.7;
+max-width:760px;
+
+padding-left:30px;
+padding-right:30px;
+
+padding-top:18vh;
+
+padding-bottom:10vh;
+
+}
+
+.logo{
+
+font-size:.9rem;
+
+letter-spacing:8px;
+
+margin-bottom:48px;
+
+opacity:.9;
+
+text-shadow:
+0 0 8px rgba(255,240,220,.18),
+0 0 18px rgba(255,220,170,.10);
+
+}
+
+h1{
+
+font-size:
+
+clamp(
+
+2.5rem,
+
+6vw,
+
+4.6rem
+
+);
+
+font-weight:400;
+
+line-height:1.18;
+
+margin-bottom:48px;
+
+}
+
+.text{
+
+text-shadow:
+0 0 10px rgba(255,245,220,.08);
+
+font-size:
+
+clamp(
+
+1.05rem,
+
+2vw,
+
+1.2rem
+
+);
+
+line-height:2.2;
+
+}
+
+<!-- THRESHOLD OPENS V1.4 -->
+<!-- PART 2 OF 4 -->
+
+.star{
+
+font-size:2rem;
+
+margin:
+
+48px
+
+0;
+
+opacity:.95;
+
+}
+
+.btn{
+
+display:inline-block;
+white-space:nowrap;
+font-size:clamp(1.1rem,2.8vw,1.6rem);
+font-family:Georgia, serif;
+text-shadow:
+0 0 8px rgba(255,240,200,.35);
+letter-spacing:1px;
+
+margin-top:50px;
+
+padding:
+
+18px
+
+42px;
+
+background:
+
+linear-gradient(
+
+180deg,
+
+rgba(190,150,80,.95),
+
+rgba(120,90,35,.95)
+
+);
+
+color:#fff7e8;
+
+text-decoration:none;
+
+font-size:1.15rem;
+
+letter-spacing:.5px;
+
+border:none;
+
+border-radius:999px;
+
+box-shadow:
+
+0 0 12px
+
+rgba(255,200,120,.35),
+
+0 0 35px
+
+rgba(255,200,120,.20),
+
+inset 0 1px 0
+
+rgba(255,255,255,.25);
+
+transition:
+
+all .4s ease;
+animation:
+buttonBreath
+12s
+ease-in-out
+infinite;
+
+}
+
+@keyframes buttonBreath{
+
+0%{
+box-shadow:
+0 0 12px rgba(255,200,120,.35),
+0 0 35px rgba(255,200,120,.20),
+inset 0 1px 0 rgba(255,255,255,.25);
+}
+
+50%{
+box-shadow:
+0 0 22px rgba(255,220,140,.50),
+0 0 60px rgba(255,220,140,.30),
+inset 0 1px 0 rgba(255,255,255,.35);
+}
+
+100%{
+box-shadow:
+0 0 12px rgba(255,200,120,.35),
+0 0 35px rgba(255,200,120,.20),
+inset 0 1px 0 rgba(255,255,255,.25);
+}
+
+}
+  
+.btn:hover{
+
+transform:
+
+translateY(-2px);
+
+box-shadow:
+
+0 0 18px
+
+rgba(255,220,140,.45),
+
+0 0 45px
+
+rgba(255,220,140,.25);
+
+}
+
+.secondary{
+
+margin-top:24px;
+
+font-size:.9rem;
+
+opacity:.6;
+
+}
+
+audio{
+
+display:none;
+
+}
+
+/* ===== LANDSCAPE ===== */
+
+@media (orientation:landscape){
+
+.hero{
+
+min-height:100vh;
+
+height:auto;
+
+padding:60px 0;
+
+}
+
+.content{
+
+padding-top:110px;
+
+padding-bottom:60px;
+
+}
+
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width:768px){
+
+.content{
+
+padding-top:16vh;
+
+}
+
+.logo{
+
+margin-bottom:40px;
+
+
+}
+
+h1{
+
+text-shadow:
+0 0 22px rgba(255,240,220,.12);
+
+margin-bottom:40px;
+
+}
+
+}
+
+/* Sanctuary Ember Dust */
+
+.embers{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:4;
+    overflow:hidden;
+}
+
+.embers span{
+    position:absolute;
+    bottom:-20px;
+
+    width:6px;
+    height:6px;
+
+    border-radius:50%;
+
+    background:#ffb347;
+    box-shadow:0 0 8px #ffb347;
+    opacity:.7;
+  
+    animation:floatUp linear infinite;
+}
+
+@keyframes floatUp{
+
+    from{
+        transform:
+        translateY(0)
+        translateX(0);
+
+        opacity:0;
+    }
+
+    15%{
+        opacity:.6;
+    }
+
+    85%{
+        opacity:.4;
+    }
+
+    to{
+        transform:
+        translateY(-100vh)
+        translateX(30px);
+
+        opacity:0;
+    }
+}
+
+.embers span:nth-child(1){
+  left:32%;
+  animation-duration:18s;
+}
+
+.embers span:nth-child(2){
+  left:41%;
+  animation-duration:22s;
+}
+
+.embers span:nth-child(3){
+  left:47%;
+  animation-duration:20s;
+}
+
+.embers span:nth-child(4){
+  left:55%;
+  animation-duration:24s;
+}
+
+.embers span:nth-child(5){
+  left:22%;
+  animation-duration:26s;
+}
+
+.embers span:nth-child(6){
+  left:63%;
+  animation-duration:19s;
+}
+
+.embers span:nth-child(7){
+  left:45%;
+  animation-duration:28s;
+}
+
+.embers span:nth-child(8){
+  left:58%;
+  animation-duration:23s;
+}
+
+.embers span:nth-child(9){
+  left:35%;
+  animation-duration:21s;
+}
+
+.embers span:nth-child(10){
+  left:50%;
+  animation-duration:25s;
+}
+
+.embers span:nth-child(11){
+  left:66%;
+  animation-duration:20s;
+}
+
+.embers span:nth-child(12){
+  left:43%;
+  animation-duration:24s;
+}
+
+.embers span:nth-child(13){
+  left:27%;
+  animation-duration:21s;
+}
+
+.embers span:nth-child(14){
+  left:73%;
+  animation-duration:25s;
+}
+
+.embers span:nth-child(15){
+  left:52%;
+  animation-duration:19s;
+}
+
+.embers span:nth-child(16){
+  left:78%;
+  animation-duration:27s;
+}
+
+.embers span:nth-child(1){width:5px;height:5px;}
+.embers span:nth-child(2){width:8px;height:8px;}
+.embers span:nth-child(3){width:6px;height:6px;}
+.embers span:nth-child(4){width:10px;height:10px;}
+.embers span:nth-child(5){width:7px;height:7px;}
+.embers span:nth-child(6){width:5px;height:5px;}
+.embers span:nth-child(7){width:9px;height:9px;}
+.embers span:nth-child(8){width:6px;height:6px;}
+.embers span:nth-child(9){width:8px;height:8px;}
+.embers span:nth-child(10){width:5px;height:5px;}
+.embers span:nth-child(11){width:10px;height:10px;}
+.embers span:nth-child(12){width:7px;height:7px;}
+.embers span:nth-child(13){width:5px;height:5px;}
+.embers span:nth-child(14){width:9px;height:9px;}
+.embers span:nth-child(15){width:6px;height:6px;}
+.embers span:nth-child(16){width:8px;height:8px;}
+
+/* Sanctuary Key Modal */
+
+.modal{
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.88);
+display:none;
+align-items:flex-start;
+justify-content:center;
+overflow-y:auto;
+padding:30px 20px;
+z-index:9999;
+}
+
+.modal-box{
+width:min(95%,500px);
+background:#080603;
+border:1px solid #6b4b1f;
+border-radius:28px;
+padding:40px 30px;
+text-align:center;
+box-shadow:
+0 0 40px rgba(255,200,120,.12);
+
+}
+
+.modal-title{
+font-size:clamp(1.5rem,3.5vw,2.6rem);
+white-space:nowrap;
+color:#e4c98b;
+margin-bottom:20px;
+
+}
+
+.modal-text{
+
+line-height:1.9;
+
+margin-bottom:24px;
+
+}
+
+.modal input{
+
+width:100%;
+
+padding:16px;
+
+background:#120d08;
+
+border:1px solid #6b4b1f;
+
+border-radius:14px;
+
+color:#f5e6d3;
+
+font-size:1.1rem;
+
+text-align:center;
+
+margin-bottom:20px;
+}
+
+.modal-error{
+
+color:#d79d7a;
+
+min-height:24px;
+
+margin-bottom:18px;
+}
+
+</style>
+
+<script data-goatcounter="https://thesanctuary.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+  
+</head>
+
+<body>
+
+<div id="sanctuaryModal" class="modal">
+
+<div class="modal-box">
+
+<div class="modal-title">
+
+✦ THRESHOLD OPENS ✦
+
+</div>
+
+<div class="modal-text">
+
+The passage stands before you.
+
+<br><br>
+
+Enter your Sanctuary Key.
+
+</div>
+
+<input
+type="text"
+id="sanctuaryInput"
+placeholder="Sanctuary Key"
+autocomplete="off"
+autocapitalize="none"
+spellcheck="false">
+
+<div
+id="sanctuaryError"
+class="modal-error">
+
+</div>
+
+<button
+class="btn"
+onclick="checkSanctuaryKey()">
+
+❦ Open the Threshold ❦
+
+</button>
+
+</div>
+
+</div>
+  
+<div class="embers">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<audio
+id="gatewayAudio"
+loop>
+
+<source
+src="threshold-gateway.mp3"
+type="audio/mpeg">
+
+</audio>
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="door-glow"></div>
+
+<div
+id="content"
+class="content">
+
+</div>
+
+</section>
+
+<script>
+
+const destination =
+
+'https://resetwhileyousleep.github.io/sanctuary-access/welcome';
+
+const sanctuaryKey = "ReMemBerInG-FlaMe";
+
+const content =
+
+document.getElementById(
+
+'content'
+
+);
+
+const visited =
+
+localStorage.getItem(
+
+'thresholdVisited'
+
+);
+
+if(!visited){
+
+content.innerHTML = `
+
+<!-- THRESHOLD OPENS V1.4 -->
+<!-- PART 3 OF 4 -->
+
+<div class="logo">
+
+THE SANCTUARY
+
+</div>
+
+<h1>
+
+THE THRESHOLD OPENS
+
+</h1>
+
+<div class="text">
+
+<p>
+
+The sanctuary remembers.
+
+</p>
+
+<p>
+
+The path is open.
+
+</p>
+
+<p>
+
+The veil grows thin.
+
+The chambers await.
+
+</p>
+
+<div class="star">
+
+✦
+
+</div>
+
+<p>
+
+Beyond this doorway lie chambers
+
+reserved for those who chose to continue.
+
+</p>
+
+<br>
+
+<p>
+
+Enter slowly.
+
+</p>
+
+<p>
+
+There is no need to hurry.
+
+</p>
+
+</div>
+
+<a
+class="btn"
+href="#"
+onclick="requestKey(event)">
+
+❦ Enter the Sanctuary ❦
+
+</a>
+
+`;
+
+localStorage.setItem(
+
+'thresholdVisited',
+
+'true'
+
+);
+
+}else{
+
+content.innerHTML = `
+
+<div class="logo">
+
+THE SANCTUARY
+
+</div>
+
+<h1>
+
+WELCOME BACK,<br>
+
+TRAVELER
+
+</h1>
+
+<div class="text">
+
+<p>
+
+The Archive recognizes your return.
+
+</p>
+
+<p>
+
+The chambers await.
+
+</p>
+
+<div class="star">
+
+✦
+
+</div>
+
+<p>
+
+Some doors open only once.
+
+</p>
+
+<p>
+
+Others remain open for those who remember the way.
+
+</p>
+
+</div>
+
+<a
+class="btn"
+href="#"
+onclick="requestKey(event)">
+
+❦ Continue Your Journey ❦
+
+</a>
+
+`;
+
+}
+
+function requestKey(event){
+
+event.preventDefault();
+
+document.getElementById(
+'sanctuaryModal'
+).style.display='flex';
+
+}
+
+function checkSanctuaryKey(){
+
+const entered =
+document.getElementById(
+'sanctuaryInput'
+).value;
+
+if(
+entered.trim().toLowerCase() ===
+sanctuaryKey.toLowerCase()
+){
+
+localStorage.setItem(
+"sanctuary_verified",
+"true"
+);
+
+window.location.href =
+destination;
+
+}else{
+
+document.getElementById(
+'sanctuaryError'
+).textContent =
+'The Threshold remains closed.';
+
+}
+
+}
+
+const audio =
+
+document.getElementById(
+
+'gatewayAudio'
+
+);
+
+let audioStarted = false;
+
+function startAudio(){
+
+if(audioStarted) return;
+
+audioStarted = true;
+
+audio.volume = 0.08;
+
+audio.play().catch(()=>{});
+
+let volume = 0.08;
+
+const fade =
+
+setInterval(()=>{
+
+volume += 0.01;
+
+if(volume >= 0.22){
+
+volume = 0.45;
+
+clearInterval(fade);
+
+}
+
+audio.volume = volume;
+
+<!-- THRESHOLD OPENS V1.4 -->
+<!-- PART 4 OF 4 -->
+
+},300);
+
+}
+
+document.addEventListener(
+
+'touchstart',
+
+startAudio,
+
+{once:true}
+
+);
+
+document.addEventListener(
+
+'click',
+
+startAudio,
+
+{once:true}
+
+);
+
+</script>
+
+</body>
+
+</html>
+
+
+    
